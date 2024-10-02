@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Mon Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="global.css">
+  <script src="boiteModal.js"></script>
+</head>
+<body>
+<div class="Body">
+
+    <div class="bandeau">
+        Mon Portfolio
+    </div>
+
+        <nav>
+            <ul>
+                <li><a href="#Presentation">Ma Présentation</a></li>
+                <li><a href="#Skill">Mes Compétences</a></li>
+                <li><a href="#Project">Mes Projets     </a></li>
+                <li><a href="#Contact">Me Contacter</a></li>
+            </ul>
+        </nav>
+
+  
+
+
+    <div class="Presentations">
+        <section id="Presentation"></section>
+        <br><br>
+        <h1>Ma présentation</h1>
+        <br>
+        <img src="moi.webp" class="normal" style="float: left;">
+        <p>Je m'appelle Nicolas et j'ai 24 ans. Je suis né à Pessac en Gironde. 
+        N'ayant pas d'idée précise pour mon avenir après le lycée, je me suis dirigé dans une fac d'économie.</p>
+        <div style="clear:both"></div>
+        <img src="Compta.jpg" class="normal" style="float: right;">
+        <p>J'ai découvert pendant ce cursus la comptabilité et j'ai donc décidé de me réorienter vers ce domaine. 
+        J'ai donc effectué un BTS en comptabilité et gestion sur deux ans. 
+        Malheureusement coupé par le covid, mes expériences professionnelles après coup ne seront pas concluantes.</p>
+        <div style="clear:both"></div>
+        <img src="Usine.jpg" class="normal" style="float: left;">
+        <p>Après 3/4 ans ponctués entre recherche d'emploi et travail en usine, 
+        j'ai décidé au début de l'année 2024 de me réorienter et ainsi postuler pour le BTS SIO 2024/2025.</p>
+        <br><br><br><br>
+        <div style="clear:both"></div>
+    </div>
+  
+
+    <div class="Skills">
+        <section id="Skill"></section>
+        <br><br>
+        <h1>Mes Compétences</h1>
+        <br><br>
+        <div class="container"> <!-- Ajout d'un conteneur parent -->
+            <div class="inline-container">
+                <div class="item savoir_etrex"><p>Savoir être :</p></div>
+                <div class="item savoir_etre"><img src="rigor.png" class="small"><p>Rigueur</p></div>
+                <div class="item savoir_etre"><img src="autonomy.png" class="small"><p>Autonomie</p></div>
+                <div class="item savoir_etre"><img src="perseverance.png" class="small"><p>Persévérance</p></div>
+                <div class="item savoir_etre"><img src="teamwork.png" class="small"><p>Travail en équipe</p></div>
+            </div>
+            <div class="inline-container">
+                <div class="item languagex"><p>Voici les différents langages que je connais :</p></div>
+                <div class="item language"><img src="python_logo.jpg" class="small"><p>Python</p></div>
+                <div class="item language"><img src="html_logo.jpg" class="small"><p>HTML</p></div>
+                <div class="item language"><img src="css_logo.jpg" class="small"><p>CSS</p></div>
+                <div class="item language"><img src="php_logo.png" class="small"><p>PHP</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Projects">
+        <section id="Project"></section>
+        <br><br>
+        <h1>Mes Projets</h1>
+        <br>
+        <p>Voici la liste de mes différents projets</p>
+        <br>
+        <div class="container">
+            <div class="inline-container">
+                <p>Projet PANT</p>
+                <br>
+                <div class="item savoir_etre"><img src="Projet PANT.jfif" class="normal" id="image1" onclick="showModal('image1')"></div>
+            </div>
+            <div class="inline-container" >
+                <p>Projet Portfolio</p>
+                <br>
+                <div class="item language"><img src="portfolio.png" class="normal" id="image2" onclick="showModal('image2')"></div>
+            </div>
+        </div>
+        <!-- Boîte modale -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p id="modalText"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="Contacts">
+        <section id="Contact"></section>
+        <br><br>
+        <h1>Contact</h1>
+        <br>
+        <p>Nicolas Goyon</p>
+        <p>Portable: 06.56.79.88.72</p>
+        <p>goyonnicolas33@gmail.com</p>
+        <a href="https://www.linkedin.com/in/nicolasgoyon/" class="Linkedin_Button"><img src="Linkedin.png" alt="LinkedIn"></a>
+        <br><br><br><br>
+    </div>
+
+
+
+    <div class="footer">
+        <p>© Copyright 2024 - Nicolas Goyon. Tous droits réservés.</p>
+        <p>
+            |<a href="Plandusite.html">Plan du Site</a>
+            |<a href="MentionsLegales.html">Mentions Légales</a> 
+            |<a href="politiqueDeConfidentialité.html">Politique De Confidentialité</a>
+            |
+        </p>
+    </div>
+</div>
+</body>
+</html>

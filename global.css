@@ -1,0 +1,274 @@
+
+
+ 
+.bandeau {
+    background-color: #e42b34d8;
+    color: #000000;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer {
+    background-color: #e42b34d8;
+    color: #000000;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*début du menu*/
+.menu {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #000000;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    width: 100%;
+    margin: 0px auto 40px auto;
+    background-color: #e42b34d8;
+    position: sticky;
+    top: 0px;
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    float: left;
+    width: 25%; /* 100% divisé par le nombre d'éléments de menu */
+    text-align: center; /* Centre le texte dans les éléments de menu */
+}
+
+/* Evite que le menu n'ait une hauteur nulle */
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block; /* Toute la surface sera cliquable */
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent; /* Evite le décalage des éléments sous le menu à cause de la bordure en :hover */
+    padding: 10px 0px; /* Agrandit le menu et espace la bordure du texte */
+}
+
+nav a:hover {
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.conteneur {
+  margin: 0px 20px;
+  height: 1500px;
+}
+
+/* fin du menu */
+
+.Presentations {
+    background-color: #e42b34d8;
+    height: 800px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
+}
+
+/* Styles par défaut */
+.Skills {
+    background-color: white;
+    height: 800px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex; /* Utilisation de flexbox pour aligner les conteneurs */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    justify-content: space-between; /* Espace entre les conteneurs */
+}
+
+.inline-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 48%; /* Largeur des conteneurs pour qu'ils tiennent côte à côte */
+}
+
+.item {
+    width: 100%; /* Largeur des éléments à 100% du conteneur */
+    height: 100px;
+    text-align: center;
+}
+
+.savoir_etre {
+    /* background-color: #e42b34d8; TESTFORM */
+    text-align: center;
+}
+
+.savoir_etrex {
+    /* background-color: #e42b34d8; TESTFORM */
+    text-align: center;
+}
+
+.language {
+    /* background-color: #e42b34d8; TESTFORM */
+    text-align: center;
+}
+
+.languagex {
+    /* background-color: #e42b34d8; TESTFORM */
+    text-align: center;
+}
+/* fin test grille */
+
+.Projects {
+    background-color: #e42b34d8;
+    height: 800px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Contacts {
+    background-color: white;
+    height: 800px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.MentionLegale {
+    background-color: #e42b34d8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.Body {
+    background-color: #e42b34d8;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Bouton Linkedin */
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 60px;
+    text-decoration: none;
+    margin: 5px 80px;
+}
+
+/*fin boutton Linkedin*/
+
+/*test affichage projet*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+    position: relative;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Pour les liens non visités */
+a:link {
+    color: inherit; /* Utilise la couleur du texte environnant */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+/* Pour les liens visités */
+a:visited {
+    color: inherit; /* Utilise la couleur du texte environnant */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+/* Pour les liens au survol */
+a:hover {
+    color: inherit; /* Utilise la couleur du texte environnant */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+/* Pour les liens actifs */
+a:active {
+    color: inherit; /* Utilise la couleur du texte environnant */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+/* taille image */
+.small {
+    width: 50px;
+    height: 50px;
+}
+
+.normal {
+    width: 200px;
+    height: 200px;
+}
+
+/* Styles pour les petits écrans (téléphones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+
+    nav {
+        font-size: 12px;
+    }
+
+    img.normal {
+        width: 25%;
+        height: auto;
+    }
+
+
+}
